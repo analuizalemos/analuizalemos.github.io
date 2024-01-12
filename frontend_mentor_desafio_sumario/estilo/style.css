@@ -1,0 +1,180 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    gap: 20px;
+    justify-content: center;
+    place-self: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.564);   
+    border-radius: 20px;
+    width: max-content;
+}
+
+
+
+/* DIV DO RESULTADO */
+
+.result{
+    display: grid;
+    gap: 20px;
+    background-color: #6D00F1;
+    border-radius: 20px;
+    place-items: center;
+    padding: 25px;
+    color: #CCC5FF;
+    grid-template-columns: repeat(3,auto), 10px;
+}
+
+
+
+.circulo {
+    display: grid;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg, #2e1d5e 0%, #6D00F1 100%);
+    padding: 10px;
+    gap: 5px;
+    place-content: center;
+    grid-template-rows: 50px auto;
+    color: #CCC5FF;
+}
+
+#pontuacao{
+    color: white;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 700;
+}
+
+#great{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 700;
+}
+
+#descricao{
+    text-align: center;
+}
+
+
+/* DIV DO SUMARIO */
+
+.summary{
+    display: grid;
+    place-items: start;
+    padding: 25px;
+    gap: 10px;
+}
+
+.atributos{
+    display: grid;
+    gap: 15px;
+}
+
+.atributos > div {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    height: 32px;
+    width: 220px;
+    place-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 0px;
+  }
+  
+  .atributos > div > p:first-child {
+    min-width: 130px; 
+  }
+
+#reacao{
+    color: #FF5555;
+    background-color: #FF55551b;
+  
+}
+
+#reacao > .nota{
+    color:black;
+}
+
+.cem{
+    color: #9DA6AB;
+}
+
+
+
+#memoria{
+    color:#FFB21E;
+    background-color: #ffb01e1b;
+}
+
+#memoria > .nota{
+    color:black;
+}
+
+#verbal{
+    color: #00BB8F;
+    background-color: #00BB8F1b;
+}
+
+#verbal > .nota{
+    color:black;
+}
+
+#visual{
+    color: #1125D6;
+    background-color: #1125D61b;
+ 
+}
+
+#visual > .nota{
+    color:black;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: #303B59;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: max-content;
+    place-items: center;
+    margin-top: 7px;
+    text-align: center;
+    width: 84%;
+    font-size: 13px;
+
+}
+
+
+
+
+/* ATRIBUTOS GERAIS */
+
+@font-face {
+    font-family: 'Hanken Grotesk Bold';
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+  }
+  
+body {
+    font-family: 'Hanken Grotesk Bold', sans-serif;
+    margin: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso faz com que o contêiner ocupe toda a altura da viewport */
+}
+
+h4,
+p, span{
+  margin: 0px;
+}
+
+img{
+    margin-bottom: -4px;
+    margin-right: 10px;
+}
